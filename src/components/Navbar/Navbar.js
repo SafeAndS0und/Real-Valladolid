@@ -9,7 +9,7 @@ export default () => (
             <img
                src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Real_Valladolid_Logo.svg/220px-Real_Valladolid_Logo.svg.png"
                alt="Real Valladolid Logo"/>
-            <h1 className="title">Real Valladolid - Polska</h1>
+            <h1>Real Valladolid - Polska</h1>
          </div>
       </Link>
    </nav>

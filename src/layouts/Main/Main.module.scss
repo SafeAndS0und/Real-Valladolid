@@ -1,0 +1,11 @@
+.layout {
+
+  nav {
+    margin-bottom: 50px;
+  }
+  main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3.5fr;
+  }
+}

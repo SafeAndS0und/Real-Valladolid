@@ -1,7 +1,7 @@
 import React from "react"
 import './index.css'
 import MainLayout from '../layouts/Main/Main'
-import PostList from '../components/PostList/PostList'
+import PostList from '../components/Post/PostList'
 
 export default () => {
 

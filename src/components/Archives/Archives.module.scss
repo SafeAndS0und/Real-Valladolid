@@ -1,0 +1,35 @@
+aside {
+
+  padding: 0 12px;
+
+  .month {
+
+    h3 {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 1.1em;
+      font-weight: 900;
+      color: #4B4B4B;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: .88em;
+      font-weight: normal;
+      color: #888585;
+      padding: 3px 0 3px 12px;
+      transition: .2s;
+      width: 60%;
+      border-bottom-right-radius: 16px;
+      border-top-right-radius: 16px;
+
+      &:hover {
+        background-color: #F1DEFE;
+        cursor: pointer;
+        transform: translateX(-12px);
+        color: #B357F1;
+      }
+    }
+  }
+}

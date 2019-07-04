@@ -1,16 +1,23 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import Archives from '../../components/Archives/Archives'
+import MainStyles from './Main.module.scss'
 
 
-export default ({children}) => {
+export default ({children}) =>{
 
    return (
-      <div className="layout">
+      <div className={MainStyles.layout}>
          <Navbar/>
 
-         <div>
-            {children}
-         </div>
+         <main>
+
+            <Archives/>
+            <div>
+               {children}
+            </div>
+
+         </main>
       </div>
    )
 }
