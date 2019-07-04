@@ -1,12 +1,13 @@
 import React from "react"
 import './index.css'
 import MainLayout from '../layouts/Main/Main'
+import PostList from '../components/PostList/PostList'
 
 export default () => {
 
    return (
       <MainLayout>
-         <h1>content</h1>
+         <PostList/>
       </MainLayout>
    )
 }
