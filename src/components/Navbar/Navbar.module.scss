@@ -1,0 +1,30 @@
+nav {
+  height: 70px;
+  width: 100%;
+  background-color: #7C42F2;
+
+  div {
+    padding: 0 20px;
+    width: 40%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    grid-gap: 13px;
+
+    img {
+      max-height: 55px;
+    }
+
+    h1 {
+      color: white;
+      margin: 0;
+      font-size: 2em;
+      align-self: end;
+      padding-bottom: 12px;
+
+    }
+  }
+
+}

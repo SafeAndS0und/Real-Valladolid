@@ -1,8 +1,12 @@
 import React from "react"
+import './index.css'
+import MainLayout from '../layouts/Main/Main'
 
 export default () => {
 
    return (
-      <div>Hello world</div>
+      <MainLayout>
+         <h1>content</h1>
+      </MainLayout>
    )
 }
