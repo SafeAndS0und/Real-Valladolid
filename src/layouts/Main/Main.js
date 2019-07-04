@@ -10,7 +10,7 @@ export default ({children}) =>{
       <div className={MainStyles.layout}>
          <Navbar/>
 
-         <main>
+         <main className={MainStyles.content}>
 
             <Archives/>
             <div>

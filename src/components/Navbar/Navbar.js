@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import './Navbar.module.scss'
+import NavbarStyles from './Navbar.module.scss'
 
 export default () => (
    <nav>
@@ -12,5 +12,14 @@ export default () => (
             <h1>Real Valladolid - Polska</h1>
          </div>
       </Link>
+
+      <div className={NavbarStyles.menu}>
+         <p>
+            O Real Valladolid
+         </p>
+         <p>
+            O Autorze
+         </p>
+      </div>
    </nav>
 )

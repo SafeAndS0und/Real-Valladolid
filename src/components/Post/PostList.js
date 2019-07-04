@@ -10,9 +10,12 @@ export default () =>{
           edges {
             node {
               html
+              excerpt(pruneLength: 200)
+              timeToRead
               frontmatter {
                 title
                 date
+                image
               }
                fields {
                   slug

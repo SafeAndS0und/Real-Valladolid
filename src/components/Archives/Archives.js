@@ -26,6 +26,13 @@ export default () =>{
             <p>Whoooops </p>
          </div>
 
+         <div className={ArchivesStyles.month}>
+            <h3>Kwiecień (3)</h3>
+            <p>Lorem ipsum</p>
+            <p>Pierwszy Post</p>
+            <p>Drugi Pościk</p>
+         </div>
+
       </aside>
    )
 }

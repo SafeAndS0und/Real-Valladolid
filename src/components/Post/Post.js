@@ -1,14 +1,17 @@
 import React from 'react'
-import {Link} from "gatsby"
+import {Link, navigate} from "gatsby"
 import PostStyle from './Post.module.scss'
 
 export default ({post}) =>{
 
+
+
    return (
       <article className={PostStyle.post}>
 
-         <section className={PostStyle.image}>
-
+         <section className={PostStyle.image} style={
+            {backgroundImage: `url(${post.frontmatter.image})`}
+         }>
          </section>
 
          <section className={PostStyle.info}>
@@ -18,13 +21,12 @@ export default ({post}) =>{
 
             <small>{post.frontmatter.date}</small>
 
-            {/* html content will go here */}
-            <div dangerouslySetInnerHTML={{__html: post.html}}>
+            <div dangerouslySetInnerHTML={{__html: post.excerpt}}>
             </div>
          </section>
 
-         <section className={PostStyle.read}>
-
+         <section className={PostStyle.read} onClick={() => navigate(post.fields.slug)}>
+            <p>Czas czytania: {post.timeToRead}</p>
          </section>
       </article>
    )
