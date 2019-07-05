@@ -30,15 +30,19 @@
     border-radius: 10px;
   }
 
+
+  // styles for the post content below
+
   div {
     padding: 15px 50px;
 
     h1, h2, h3, h4 ,h5, h6 {
-      text-align: center;
+      color: #1a1a1a;
     }
 
     em {
       font-weight: 600;
+      font-style: normal;
     }
 
     hr {
@@ -48,6 +52,27 @@
       color: #2e2e2e;
       font-weight: 400;
       font-size: .92em;
+    }
+
+    blockquote{
+      padding: 4px 10px;
+      background-color: #ebebeb;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -6px;
+        bottom: 0;
+        height: 100%;
+        width: 6px;
+        background-color: #e794dc;
+      }
+    }
+
+    a {
+      color: #c166f2;
+      text-decoration: #a885a4 underline;
     }
   }
 }

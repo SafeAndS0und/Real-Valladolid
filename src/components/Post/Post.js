@@ -1,10 +1,11 @@
 import React from 'react'
 import {Link, navigate} from "gatsby"
 import PostStyle from './Post.module.scss'
+import {MdKeyboardArrowRight} from 'react-icons/md'
+import {IconContext} from "react-icons"
+
 
 export default ({post}) =>{
-
-
 
    return (
       <article className={PostStyle.post}>
@@ -26,6 +27,9 @@ export default ({post}) =>{
          </section>
 
          <section className={PostStyle.read} onClick={() => navigate(post.fields.slug)}>
+            <IconContext.Provider value={{color: 'white', size: '6em', className: PostStyle.icon}}>
+               <MdKeyboardArrowRight/>
+            </IconContext.Provider>
             <p>Czas czytania: {post.timeToRead}</p>
          </section>
       </article>
