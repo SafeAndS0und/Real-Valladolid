@@ -1,10 +1,12 @@
+@import '../../assets/css/variables.scss';
+
 .post {
   border-radius: 10px;
   padding: 20px 35px;
 
   header {
     width: 100%;
-    background-color: #6442F2;
+    background-color: $mainPurple;
     padding: 6px 0;
 
     .title, .date {

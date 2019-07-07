@@ -1,7 +1,9 @@
+@import '../../assets/css/variables.scss';
+
 nav {
   height: 70px;
   width: 100%;
-  background-color: #7C42F2;
+  background-color: $mainPurple;
   box-shadow: 0 6px 12px 2px rgba(0, 0, 0, 0.17);
   display: grid;
   grid-template-columns: 4fr 1.2fr;
@@ -60,7 +62,7 @@ nav {
       }
 
       &:hover {
-        color: #7C42F2;
+        color: $mainPurple;
 
         &:before {
           width: calc(100% + 10px);

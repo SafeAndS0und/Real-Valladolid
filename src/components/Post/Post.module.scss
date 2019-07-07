@@ -1,3 +1,5 @@
+@import '../../assets/css/variables.scss';
+
 .post {
 
   &:first-child {
@@ -51,7 +53,7 @@
   }
 
   .read {
-    background-color: #6442F2;
+    background-color: $mainPurple;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     cursor: pointer;
@@ -59,7 +61,7 @@
     position: relative;
 
     &:hover{
-      background-color: #7754f2;
+      background-color: $mainPurpleHover;
 
     }
 
