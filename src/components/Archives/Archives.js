@@ -1,6 +1,6 @@
 import React from 'react'
 import ArchivesStyles from './Archives.module.scss'
-import {useStaticQuery, graphql} from 'gatsby'
+import {useStaticQuery, graphql, Link} from 'gatsby'
 
 export default () =>{
 
@@ -14,6 +14,9 @@ export default () =>{
               childMarkdownRemark {
                 frontmatter {
                   title
+                }
+                fields {
+                  slug
                 }
               }
             }
@@ -30,12 +33,17 @@ export default () =>{
 
          {uniqueMonths.map(month =>{
             return (
-               <div className={ArchivesStyles.month}>
+               <div className={ArchivesStyles.month} key={month}>
                   <h3>{month}</h3>
-                  {edges.map(({node}) =>{
-                     if(node.relativeDirectory === month)
-                        return <p>{node.childMarkdownRemark.frontmatter.title}</p>
-                  })}
+                  {edges.map(({node}) =>
+                     node.relativeDirectory === month
+                        ? (
+                           <Link to={node.childMarkdownRemark.fields.slug} key={node.childMarkdownRemark.fields.slug}>
+                              <p>{node.childMarkdownRemark.frontmatter.title}</p>
+                           </Link>
+                        )
+                        : null
+                  )}
                </div>
             )
          })}
