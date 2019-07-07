@@ -1,11 +1,12 @@
 .layout {
 
-  nav {
-    margin-bottom: 40px;
-  }
   .content {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: .75fr 4fr;
+
+    .posts {
+      padding-left: 50px;
+    }
   }
 }

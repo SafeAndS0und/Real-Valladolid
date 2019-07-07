@@ -1,5 +1,6 @@
 import React from 'react'
 import MainLayout from '../../layouts/Main/Main'
+import {graphql} from 'gatsby'
 import PostStyles from './Post.module.scss'
 
 export default ({data}) =>{
@@ -17,7 +18,6 @@ export default ({data}) =>{
             <img src={post.frontmatter.image} alt="post image"/>
 
             <div dangerouslySetInnerHTML={{__html: post.html}}>
-
             </div>
 
          </main>

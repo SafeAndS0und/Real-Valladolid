@@ -13,7 +13,7 @@ export default ({children}) =>{
          <main className={MainStyles.content}>
 
             <Archives/>
-            <div>
+            <div className={MainStyles.posts}>
                {children}
             </div>
 
